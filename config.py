@@ -8,7 +8,7 @@ def parse():
     p.add_argument('--data', type=str, default='cocitation', help='data name (coauthorship/cocitation/hypergraph)')
 
 
-    p.add_argument('--dataset', type=str, default='pubmed', help='dataset name (e.g.: cora/dblp for coauthorship, cora/citeseer/pubmed for cocitation, 20newsW100/ModelNet40/NTU2012/Mushroom for hypergraph)')
+    p.add_argument('--dataset', type=str, default='citeseer', help='dataset name (e.g.: cora/dblp for coauthorship, cora/citeseer/pubmed for cocitation, 20newsW100/ModelNet40/NTU2012/Mushroom for hypergraph)')
 
 
     p.add_argument('--node_dropping_rate', type=float, default=0.2, help='node dropping rate')
@@ -61,13 +61,13 @@ def parse():
     p.add_argument('--wd', type=float, default=5e-4, help='weight decay')
 
 
-    p.add_argument('--epochs', type=int, default=300, help='number of epochs to train')
+    p.add_argument('--epochs', type=int, default=2000, help='number of epochs to train')
 
 
     p.add_argument('--n-runs', type=int, default=10, help='number of runs for repeated experiments')
 
 
-    p.add_argument('--gpu', type=int, default=1, help='gpu id to use')
+    p.add_argument('--gpu', type=int, default=0, help='gpu id to use')
 
 
     p.add_argument('--seed', type=int, default=0, help='seed for randomness')

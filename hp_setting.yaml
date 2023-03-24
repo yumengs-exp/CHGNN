@@ -1,0 +1,74 @@
+cora_coauthorship:
+   w_cl_e: 0.2
+   w_crosscl_nc: 0.2
+   w_crosscl_ne: 0.2
+   w_crosscl_ec: 0.2
+   nhid: 8
+   nproj: 16
+
+citeseer:
+   w_cl_e: 0.8
+   w_crosscl_nc: 1
+   w_crosscl_ne: 0.8
+   w_crosscl_ec: 0.8
+   nhid: 8
+   nproj: 16
+
+cora:
+   w_cl_e: 0.7
+   w_crosscl_nc: 0.5
+   w_crosscl_ne: 0.9
+   w_crosscl_ec: 0.9
+   nhid: 8
+   nproj: 16
+
+dblp:
+   w_cl_e: 0.0625
+   w_crosscl_nc: 0
+   w_crosscl_ne: 0.25
+   w_crosscl_ec: 0.25
+   nhid: 64
+   nproj: 16
+
+
+pubmed:
+   w_cl_e: 0.9
+   w_crosscl_nc: 0.8
+   w_crosscl_ne: 0.7
+   w_crosscl_ec: 0.7
+   nhid: 64
+   nproj: 16
+
+Mushroom:
+   w_cl_e: 0.2
+   w_crosscl_nc: 0
+   w_crosscl_ne: 0.1
+   w_crosscl_ec: 0.024
+   nhid: 8
+   nproj: 16
+
+
+NTU2012:
+   w_cl_e: 0.3
+   w_crosscl_nc: 0.1
+   w_crosscl_ne: 0.7
+   w_crosscl_ec: 0.7
+   nhid: 64
+   nproj: 512
+
+20newsW100:
+   w_cl_e: 0.1
+   w_crosscl_nc: 0.8
+   w_crosscl_ne: 0.6
+   w_crosscl_ec: 0.6
+   nhid: 8
+   nproj: 16
+
+ModelNet40:
+   w_cl_e: 0.7
+   w_crosscl_nc: 0.1
+   w_crosscl_ne: 0.032
+   w_crosscl_ec: 0
+   nhid: 32
+   nproj: 16
+
