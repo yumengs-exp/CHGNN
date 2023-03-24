@@ -23,17 +23,13 @@ if args.data == "coauthorship" and args.dataset =="cora":
 else:
     hp_setting_name = args.dataset
 params = yaml.safe_load(open('setting.yaml'))[hp_setting_name]
-args.w_cl_c = params['w_cl_c']
 args.w_cl_e = params['w_cl_e']
 args.w_crosscl_nc = params['w_crosscl_nc']
 args.w_crosscl_ne = params['w_crosscl_ne']
 args.w_crosscl_ec = params['w_crosscl_ec']
-args.w_homo = params['w_homo']
-args.epochs = params['epochs']
 args.nhid = params['nhid']
 args.nproj = params['nproj']
 
-args.epochs=2000
 
 
 # gpu, seed
@@ -138,7 +134,7 @@ def train_with_viewgen(view_gen1, view_gen2, view_optimizer, model, optimizer, X
 
     return loss
 
-# bbbbest=0
+
 for run in range(1, args.n_runs+1):
     run_dir = out_dir / f'{run}'
     run_dir.makedirs_p()
