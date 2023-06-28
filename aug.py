@@ -2,7 +2,7 @@ import torch
 import torch, numpy as np, scipy.sparse as sp
 import torch_sparse
 from torch_scatter import scatter
-from model.Generator import Generator
+#from model.Generator import Generator
 # node dropping
 
 def aug_node(overlappness,args):
