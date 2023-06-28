@@ -1,9 +1,9 @@
-from model.HyperGNN import HyperGNN
+#from model.HyperGNN import HyperGNN
 import torch, numpy as np, scipy.sparse as sp
 import torch.optim as optim, torch.nn.functional as F
 from aug import aug_node,aug_edge
 from torch_scatter import scatter
-from model.Generator import Generator
+#from model.Generator import Generator
 from model.HHyperGNN import HHyperGNN
 import os
 def accuracy(Z, Y):
