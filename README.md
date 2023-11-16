@@ -31,6 +31,8 @@ co-citation hypergraphs
 * Citeseer
 * Cora
 
+* For citation datasets, you can download training splits from HyperGCN.
+  
 other hypergraphs
 * 20newsgroup
 * ModelNet40
